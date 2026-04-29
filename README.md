@@ -48,8 +48,23 @@ A SystemVerilog testbench is used to:
 ## Simulation Output
 WRITE: Address=16 Data=a5a5a5a5
 PASS READ: Address=16 Data=a5a5a5a5
+
 WRITE: Address=32 Data=12345678
 PASS READ: Address=32 Data=12345678
+
 WRITE: Address=48 Data=deadbeef
 PASS READ: Address=48 Data=deadbeef
+
 APB verification completed.
+
+## APB Protocol Phases
+- Setup Phase: PSEL = 1, PENABLE = 0
+- Enable Phase: PSEL = 1, PENABLE = 1
+- Transfer completes when PREADY = 1
+
+- ## Skills Demonstrated
+- RTL Design
+- APB Protocol Understanding
+- Read/Write Transaction Verification
+- Testbench Development
+- Debugging using Waveforms
